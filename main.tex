@@ -1,0 +1,83 @@
+% ============================================================
+%  Publication 3 — Bahá'í Studies
+%  "Mahabbat and the Affinity Tensor: Quantum Physics as
+%   Confirmation of Bahá'í Relational Ontology"
+%
+%  Target: Journal of Bahá'í Studies · Lights of Irfan ·
+%          Association for Bahá'í Studies Conference
+%  Compiler: pdflatex (Overleaf)
+%  No mathematics required for validation of this paper.
+%  Dr. Joshua Adams | 2026
+% ============================================================
+
+\documentclass[12pt, a4paper]{article}
+
+% ── Encoding & fonts ──────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ── Page geometry ─────────────────────────────────────────
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\doublespacing
+
+% ── Tables & figures ──────────────────────────────────────
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\graphicspath{{figures/}}
+
+% ── Arabic / Persian text support for mahabbat etc. ───────
+\usepackage{arabtex}   % or use \usepackage{arabxetex} with XeLaTeX
+
+% ── Bibliography (author-year for humanities journals) ────
+\usepackage[authoryear, round, sort]{natbib}
+\bibliographystyle{apalike}
+
+% ── Hyperlinks ────────────────────────────────────────────
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+% ── Bahá'í typesetting helpers ────────────────────────────
+\usepackage{xspace}
+\newcommand{\bahai}{Bah\'a\'{\i}\xspace}
+\newcommand{\Bahai}{Bah\'a\'{\i}\xspace}
+\newcommand{\Bahaullah}{Bah\'a'u'll\'ah\xspace}
+\newcommand{\AbdulBaha}{'Abdu'l-Bah\'a\xspace}
+\newcommand{\mahabbat}{\textit{mahabbat}\xspace}
+\newcommand{\mawaddat}{\textit{mawaddat}\xspace}
+
+% =============================================================
+\begin{document}
+% =============================================================
+
+\title{Mahabbat and the Affinity Tensor: Quantum Physics as Confirmation\\
+       of Bahá'í Relational Ontology}
+
+\author{Joshua Adams\\
+        \small Resilient Consulting Solutions\\
+        \small \texttt{josh@resilientconsultingsolutions.com}}
+
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/00-abstract}
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+\input{sections/01-introduction}
+\input{sections/02-mahabbat-textual}
+\input{sections/03-six-convergences}
+\input{sections/04-chronological}
+\input{sections/05-confirmation-not-appropriation}
+\input{sections/06-non-composite-soul}
+\input{sections/07-conclusion}
+
+\bibliography{references}
+
+\end{document}
